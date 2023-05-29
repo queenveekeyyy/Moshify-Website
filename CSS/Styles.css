@@ -11,6 +11,10 @@ html{
     --color--body:#916ca4;
  }
 
+ *,*::after,*::before{
+   box-sizing: border-box;
+ }
+ 
  body{
     font-family: inter, Arial, Helvetica, sans-serif;
     color: var(--color--body);
@@ -139,4 +143,48 @@ margin-right: 2rem;
    .list--tick .list__item{
       padding-left: 0;
    }
+}
+
+/*Button*/
+.btn{
+   font-size: 1.8rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   padding: 2rem 3rem;
+   border: 0;
+   border-radius: 40px;
+   cursor: pointer;
+   white-space: nowrap;
+   text-align: center;
+}
+
+.btn--primary{
+   background: var(--color-primary);
+   color: #fff;
+}
+
+.btn--secondary{
+   background: var(--color-secondary);
+   color: #fff;
+}
+
+.btn--accent{
+   background: var(--color-accent);
+   color: #fff;
+}
+
+.btn--primary:hover{
+   background: #398ffd;
+}
+
+.btn--secondary:hover{
+   background: #00c8eb;
+}
+
+.btn--accent:hover{
+   background: #ec3000;
+}
+.btn--block{
+   width: 100%;
+   display: inline-block;
 }
