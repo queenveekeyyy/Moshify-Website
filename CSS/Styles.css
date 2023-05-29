@@ -1,20 +1,21 @@
-html{
-    font-size: 62.5;
-}
-
-
 :root{
-    --color-primary:#2584ff;
-    --color-secondary:#00d9ff;
-    --color-accent:#ff3400;
-    --color--headings:#1b0760;
-    --color--body:#916ca4;
- }
+   --color-primary:#2584ff;
+   --color-secondary:#00d9ff;
+   --color-accent:#ff3400;
+   --color--headings:#1b0760;
+   --color--body:#916ca4;
+}
 
  *,*::after,*::before{
    box-sizing: border-box;
  }
- 
+
+ /*Typography*/
+
+ html{
+   font-size: 62.5;
+}
+
  body{
     font-family: inter, Arial, Helvetica, sans-serif;
     color: var(--color--body);
@@ -57,6 +58,7 @@ html{
     }
  }
 
+ /*Links*/
  .link-arrow{
 color: var(--color-accent);
 text-transform: uppercase;
@@ -86,6 +88,7 @@ font-weight: bold;
    
  }
 
+ /*Badges*/
  .badge{
    border-radius: 30px;
    padding: 0.5rem 2rem;
@@ -118,6 +121,7 @@ font-weight: bold;
    }
 }
 
+/*List*/
 .list{
    list-style: none;
    padding-left: 0;
@@ -156,6 +160,7 @@ margin-right: 2rem;
    cursor: pointer;
    white-space: nowrap;
    text-align: center;
+   margin: 1rem 0;
 }
 
 .btn--primary{
@@ -184,7 +189,24 @@ margin-right: 2rem;
 .btn--accent:hover{
    background: #ec3000;
 }
-.btn--block{
+.btn--block {
    width: 100%;
    display: inline-block;
+}
+
+.btn--outline {
+   background: #fff;
+   color: var(--color--headings);
+   border: 2px solid var(--color--headings);
+}
+
+.btn--outline:hover {
+   background: var(--color--headings);
+   color: #fff;
+}
+
+@media screen  and (min-width: 1024px) {
+   .btn{
+      font-size: 1.5rem;
+   }
 }
